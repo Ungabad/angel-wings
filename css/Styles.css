@@ -1,3 +1,31 @@
+:root {
+  --primary-color: #ebb7f8e3;
+  --secondary-color: #2c0136e3;
+  --third-color: #8abb85e3;
+
+  /* Font Sizes */
+  --font-size-small: 0.75rem; /* 12px */
+  --font-size-md: 1rem; /* 16px */
+  --font-size-lg: 1.5rem; /* 24px */
+  --font-size-xl: 2rem; /* 32px */
+  --font-size-xxl: 3rem; /* 48px */
+  --font-size-xxxl: 4rem; /* 64px */
+  --font-size-xxxxl: 6rem; /* 96px */
+
+  /* Margins */
+  --margin-small: 0.3125rem; /* 5px */
+  --margin-md: 0.625rem; /* 10px */
+  --margin-lg: 1.25rem; /* 20px */
+
+  /* Paddings */
+  --padding-small: 0.25rem; /* 4px */
+  --padding-md: 0.5rem; /* 8px */
+  --padding-lg: 1rem; /* 16px */
+
+  /* Border Radius */
+  --border-radius: 0.3125rem; /* 5px */
+}
+
 /*Google Fonts*/
 .playwrite-nz-headers {
   font-family: "Playwrite NZ", cursive;
@@ -39,8 +67,8 @@ nav ul {
 }
 
 nav li {
-  border-bottom: 0.18rem solid #fff;
-  color: #fff;
+  border-bottom: 0.18rem solid var(--third-color);
+  color: var(--third-color);
   font-size: 16px;
   padding: 5px 0;
   display: flex;
@@ -79,7 +107,7 @@ input[type="checkbox"]:checked ~ nav ul {
 .line {
   position: absolute;
   display: block;
-  background: #3d3d3d;
+  background: var(--secondary-color);
   width: 18px;
   height: 0.15rem;
   border-radius: 0.2rem;
@@ -105,7 +133,7 @@ input[type="checkbox"]:checked ~ nav ul {
 input[type="checkbox"]:checked ~ label .line-1 {
   top: 0px;
   width: 22px;
-  /*transform: translateX(-11px) rotate(-45deg) translateY(12px);*/
+  transform: translateX(-11px) rotate(-45deg) translateY(12px);
 }
 
 input[type="checkbox"]:checked ~ label .line-2 {
@@ -115,31 +143,34 @@ input[type="checkbox"]:checked ~ label .line-2 {
 input[type="checkbox"]:checked ~ label .line-3 {
   top: 14px;
   width: 22px;
-  /*transform: translateX(-8px) rotate(45deg) translateY(-8px);*/
+  transform: translateX(-8px) rotate(45deg) translateY(-8px);
 }
 /*End Hamburger Button*/
 
 body {
-  background-color: #f5f8d95e;
+  background-color: var(--primary-color);
+  text-align: center;
 }
 
 #logo {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
   margin: 0 auto;
   display: block;
+  padding: var(--padding-lg);
 }
 
 h1 {
-  text-align: center;
-  font-size: 60px;
-  font-weight: 700;
-}
-
-.pg-1 {
-  text-align: center;
+  font-size: var(--font-size-xl);
 }
 
 main p {
-  text-align: center;
-  font-size: 20px;
-  font-weight: 700;
+  font-size: var(--font-size-md);
+}
+
+button {
+  color: var(--primary-color);
+  border-color: var(--third-color);
+  background-color: var(--secondary-color);
 }
