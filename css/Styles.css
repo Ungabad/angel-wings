@@ -9,13 +9,6 @@
   color: #fff;
 } */
 
-img {
-  display: block;
-  width: 100%;
-  max-width: 400px;
-  margin: 0 auto;
-}
-
 :root {
   --primary-color: #ebb7f8e3;
   --secondary-color: #2c0136e3;
@@ -169,6 +162,7 @@ body {
   background-color: var(--primary-color);
   height: 150vh;
   position: relative;
+  text-align: center;
 }
 
 header {
@@ -176,6 +170,13 @@ header {
   background-color: var(--primary-color);
   position: sticky;
   top: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
 }
 
 footer {
@@ -207,8 +208,25 @@ footer li a {
   color: var(--third-color);
 }
 
+button {
+  background-color: var(--secondary-color);
+  border: 1px solid var(--third-color);
+  color: var(--primary-color);
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
 .picture {
   width: 100%;
   max-width: 400px;
   margin: 0 auto;
+}
+
+.landing {
+  font-size: var(--font-size-xxl);
 }
